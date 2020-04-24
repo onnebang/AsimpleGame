@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "#171739"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/mypage_backbtu"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:layout_marginTop = "15dp"
+            android:layout_marginLeft = "10dp"
+            android:src = "@drawable/ic_back"
+            android:background = "#171739"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title_mypage"
+        android:textSize = "40dp"
+        android:fontFamily = "@font/nanumsquarebold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="마이페이지"
+        android:textStyle = "bold"
+        android:gravity = "center_horizontal"
+        android:layout_marginTop="40dp"
+        android:textColor = "#69d76b"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mypage_nametxt"
+            android:layout_width="102dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="이름"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <EditText
+            android:id="@+id/mypage_namevaule"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="이름을 입력하세요"
+            android:inputType="textPersonName"
+            android:textColor="#ffffff"
+            android:textColorHint="#9FFFFFFF"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/mypage_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_rounded2"
+            app:srcCompat="@drawable/btn_rounded4" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mypage_Emailtxt"
+            android:layout_width="102dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="이메일"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <EditText
+            android:id="@+id/mypage_Emailvaule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="이메일을 입력하세요"
+            android:inputType="textPersonName"
+            android:textColor="#ffffff"
+            android:textColorHint="#9FFFFFFF"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mypage_numbertxt"
+            android:layout_width="102dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="전화번호"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <EditText
+            android:id="@+id/mypage_numbervaule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="전화번호를 입력하세요"
+            android:inputType="textPersonName"
+            android:textColor="#ffffff"
+            android:textColorHint="#9FFFFFFF"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/mypage_gender"
+            android:layout_width="102dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="성별"
+            android:textColor="#ffffff" />
+
+        <RadioGroup
+            android:id="@+id/RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:checkedButton="@id/manbutton"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/manbutton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:buttonTint="#ffffff"
+                android:gravity="center_vertical"
+                android:text="남성"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:id="@+id/womanbutton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:buttonTint="#ffffff"
+                android:gravity="center_vertical"
+                android:shadowColor="#FFFFFF"
+                android:text="여성"
+                android:textColor="#ffffff" />
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
+        <TextView
+            android:id="@+id/mypage_lastscoretxt"
+            android:layout_width="102dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="최근점수"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <TextView
+            android:id="@+id/mypage_lastscorevalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="기록이 없습니다"
+            android:textColor="#ffffff"
+            android:textColorHint="#9FFFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/mypage_highscoretxt"
+            android:layout_width="102dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="최고점수"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <TextView
+            android:id="@+id/mypage_highscorevaule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="기록이 없습니다"
+            android:textColor="#ffffff"
+            android:textColorHint="#9FFFFFFF"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mypage_savebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_roundedgradient"
+        android:fontFamily="@font/nanumsquarebold"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="저장하기"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/mypage_logoutbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_rounded"
+        android:fontFamily="@font/nanumsquarebold"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="로그아웃"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
